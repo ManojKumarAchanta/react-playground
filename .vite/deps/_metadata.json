@@ -2,7 +2,45 @@
   "hash": "8002d795",
   "configHash": "f75a053d",
   "lockfileHash": "78e70880",
-  "browserHash": "47517358",
-  "optimized": {},
-  "chunks": {}
+  "browserHash": "b5af0cf7",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "14c74131",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "02bebc5a",
+      "needsInterop": true
+    },
+    "@babel/standalone": {
+      "src": "../../node_modules/@babel/standalone/babel.js",
+      "file": "@babel_standalone.js",
+      "fileHash": "e19cb80b",
+      "needsInterop": true
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "6ea954a0",
+      "needsInterop": false
+    },
+    "@monaco-editor/react": {
+      "src": "../../node_modules/@monaco-editor/react/dist/index.mjs",
+      "file": "@monaco-editor_react.js",
+      "fileHash": "aea1a8f4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-VX2H6PUQ": {
+      "file": "chunk-VX2H6PUQ.js"
+    },
+    "chunk-G3PMV62Z": {
+      "file": "chunk-G3PMV62Z.js"
+    }
+  }
 }
