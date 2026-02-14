@@ -12,7 +12,7 @@ export default function Header({ theme, setTheme }) {
       </div>
       <div className="ide__status">
         <div className="shoutout">
-          <strong className="personal-brand">Made with <span style={{color: "#e25555", fontSize: "14px"}}>❤</span> by{"Manoj Kumar Achanta"}</strong>
+          <strong className="personal-brand">Made with <span style={{color: "#e25555", fontSize: "14px"}}>❤</span> by {"Manoj Kumar Achanta"}</strong>
         </div>
         <div className="live-container">
           <span className="dot" /> Live

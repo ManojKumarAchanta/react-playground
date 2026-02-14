@@ -12,7 +12,7 @@ import { PREVIEW_TEMPLATE } from "./constants/previewTemplate";
 export default function App() {
   const [files, setFiles] = useState(INITIAL_FILES);
   const [activeFileId, setActiveFileId] = useState("app");
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const activeFile = useMemo(
     () => files.find((f) => f.id === activeFileId),
