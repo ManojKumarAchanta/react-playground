@@ -1,14 +1,13 @@
-export default function FileExplorer({ files, activeFileId, setActiveFileId }) {
+export default function FileExplorer({theme, files, activeFileId, setActiveFileId }) {
   return (
-    <aside className="ide__files">
-      <div className="ide__section-title">Files</div>
+    <aside className={`ide__files theme--${theme}`}>
+      <div className={`ide__section-title theme--${theme}`}>Files</div>
       {files.map((file) => (
         <button
           key={file.id}
           className={
-            file.id === activeFileId
-              ? "ide__file ide__file--active"
-              : "ide__file"
+            `ide__file theme--${theme}` +
+            (file.id === activeFileId ? " ide__file--active" : "")
           }
           onClick={() => setActiveFileId(file.id)}
         >
