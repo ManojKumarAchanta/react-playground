@@ -12,6 +12,7 @@ import { PREVIEW_TEMPLATE } from "./constants/previewTemplate";
 export default function App() {
   const [files, setFiles] = useState(INITIAL_FILES);
   const [activeFileId, setActiveFileId] = useState("app");
+  const [theme, setTheme] = useState("light");
 
   const activeFile = useMemo(
     () => files.find((f) => f.id === activeFileId),
@@ -53,16 +54,17 @@ export default function App() {
   };
 
   return (
-    <div className="ide">
-      <Header />
-      <section className="ide__surface">
+    <div className={`ide theme--${theme}`}>
+      <Header theme={theme} setTheme={setTheme} />
+      <section className={`ide__surface theme--${theme}`}>
         <FileExplorer
           files={files}
           activeFileId={activeFileId}
           setActiveFileId={setActiveFileId}
+          theme={theme}
         />
-        <CodeEditor file={activeFile} onChange={updateActiveFile} />
-        <PreviewPane />
+        <CodeEditor file={activeFile} onChange={updateActiveFile} theme={theme} />
+        <PreviewPane theme={theme} />
       </section>
     </div>
   );

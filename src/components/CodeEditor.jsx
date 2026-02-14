@@ -1,13 +1,13 @@
 import Editor from "@monaco-editor/react";
 
-export default function CodeEditor({ file, onChange }) {
+export default function CodeEditor({ theme, file, onChange }) {
   return (
-    <div className="ide__editor">
-      <div className="ide__section-title">{file.name}</div>
+    <div className={`ide__editor theme--${theme}`}>
+      <div className={`ide__section-title theme--${theme}`}>{file.name}</div>
       <Editor
         height="100%"
         language={file.language === "jsx" ? "javascript" : file.language}
-        theme="vs-dark"
+        theme={theme === "dark" ? "vs-dark" : "light"}
         value={file.value}
         onChange={(value) => onChange(value)}
         options={{
