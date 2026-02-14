@@ -1,16 +1,48 @@
-# React + Vite
+# React Online IDE Playground ⚛️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal React playground where you can write JSX and CSS in two simple files and instantly see the output — no run button, no build step, just live preview.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- ⚡ Live JSX compilation (Babel in-browser)
+- 🎨 Real-time CSS updates
+- 💻 VS Code–powered editor (Monaco)
+- 🔥 Instant preview in sandboxed iframe
+- 🧩 Two-file structure:
+  - `App.jsx`
+  - `styles.css`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 How It Works
+
+1. You write JSX in `App.jsx`
+2. Babel compiles JSX to JavaScript
+3. The compiled code is injected into an iframe
+4. CSS from `styles.css` is applied
+5. React renders automatically
+
+No refresh required. No manual render button.
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- Babel Standalone
+- Monaco Editor
+- iframe sandbox rendering
+
+---
+
+## ▶️ Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
